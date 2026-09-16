@@ -1,0 +1,44 @@
+RMSE:
+
+Leave-0-out model comparison
+1. Linear: RMSE = 1.742076 nm
+2. Quadratic: RMSE = 0.601172 nm
+3. Cubic: RMSE = 0.197641 nm
+4. Cubic spline: RMSE = 0.000000 nm
+
+Leave-1-out model comparison
+1. Linear: RMSE = 2.920890 nm
+2. Quadratic: RMSE = 1.943880 nm
+3. Cubic: RMSE = 2.416531 nm
+4. Cubic spline: RMSE = 2.828281 nm
+
+Leave-2-out model comparison
+1. Linear: RMSE = 3.024919 nm
+2. Quadratic: RMSE = 2.038093 nm
+3. Cubic: RMSE = 2.999288 nm
+4. Cubic spline: RMSE = 11.240220 nm
+
+
+Calibration formulas:
+
+Linear coefficients (highest power first):
+0.358390001918, 313.52304821
+  lambda(p) = (0.358390001918)*p^1 + (313.52304821)*p^0
+
+Quadratic coefficients (highest power first):
+-1.57393206831e-05, 0.385952685755, 303.361668663
+  lambda(p) = (-1.57393206831e-05)*p^2 + (0.385952685755)*p^1 + (303.361668663)*p^0
+
+Cubic coefficients (highest power first):
+-1.78788922031e-08, 3.08645872883e-05, 0.349265613027, 311.705520817
+  lambda(p) = (-1.78788922031e-08)*p^3 + (3.08645872883e-05)*p^2 + (0.349265613027)*p^1 + (311.705520817)*p^0
+
+Cubic spline coefficients:
+Each segment uses d = p - left_pixel and c[0:4, i].
+  347 <= p <= 647: lambda(p) = (4.66845554059e-08)*d^3 + (-5.2534469277e-05)*d^2 + (0.379025397463)*d + (435.83)
+  647 <= p <= 735: lambda(p) = (4.66845554059e-08)*d^3 + (-1.05183694117e-05)*d^2 + (0.360109545857)*d + (546.07)
+  735 <= p <= 1064: lambda(p) = (1.15319675088e-08)*d^3 + (1.80635321544e-06)*d^2 + (0.359342888431)*d + (577.71)
+  1064 <= p <= 1092: lambda(p) = (-1.36991161369e-06)*d^3 + (1.31884051466e-05)*d^2 + (0.364276163932)*d + (696.54)
+  1092 <= p <= 1255: lambda(p) = (1.21169229023e-07)*d^3 + (-0.000101884170403)*d^2 + (0.361792682505)*d + (706.72)
+  1255 <= p <= 1395: lambda(p) = (1.21169229023e-07)*d^3 + (-4.2632417411e-05)*d^2 + (0.338236478692)*d + (763.51)
+
