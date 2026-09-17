@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import CubicSpline
 
-wavelength = np.array([435.83, 546.07, 577.71, 696.54, 706.72, 763.51, 810.36]) # First 3 values are mercury lines, last 5 are argon lines.
-pixels = np.array([347, 647, 735, 1064, 1092, 1255, 1395]) # Pixel values found by manual inspection
+wavelength = np.array([435.83, 546.07, (576.96+579.06)/2, 696.54, 706.72, 763.51]) # First 3 values are mercury lines(the third is a dublet), last 3 are argon lines.
+pixels = np.array([347, 647, 735, 1064, 1092, 1255]) # Pixel values found by manual inspection
 
 image_pixels = np.linspace(pixels.min(), pixels.max(), 1000)
 
-leave_out = 1 # Number of points to leave out when interpolating. 
+leave_out = 0 # Number of points to leave out when interpolating. 
               # Cubic spline will always fit all points so it will always give RMSE = 0 without leave out
 
 

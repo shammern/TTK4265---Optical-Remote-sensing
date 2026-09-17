@@ -1,11 +1,12 @@
 Repeatability:
 
 Argon
-Mean pixel uncertainty: 0.2377 counts
-Maximum pixel uncertainty: 41.5571 counts
-Mean spectrum uncertainty: 0.0473 counts
+AR mean pixel uncertainty: 0.2377 counts
+AR maximum pixel uncertainty: 41.5571 counts
+AR mean spectrum uncertainty: 0.1456 counts
+
 
 Mercury
-Mean pixel uncertainty: 0.4933 counts
-Maximum pixel uncertainty: 42.1874 counts
-Mean spectrum uncertainty: 0.4007 counts
+HG mean pixel uncertainty: 0.4933 counts
+HG maximum pixel uncertainty: 42.1874 counts
+HG mean spectrum uncertainty: 0.9878 counts
